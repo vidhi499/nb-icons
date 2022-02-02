@@ -10,11 +10,13 @@ import {
   useColorMode,
   VStack,
   Code,
+  Icon,
 } from "native-base";
+import { AntDesign } from "./cra";
 
 function App() {
   const { colorMode } = useColorMode();
-
+  console.log(AntDesign);
   return (
     <Box
       bg={colorMode === "light" ? "coolGray.50" : "coolGray.900"}
@@ -22,6 +24,14 @@ function App() {
       justifyContent="center"
       px={4}
     >
+      <Icon
+        as={AntDesign}
+        name="android1"
+        color="coolGray.800"
+        _dark={{
+          color: "warmGray.50",
+        }}
+      />
       <VStack space={5} alignItems="center">
         <Image
           source={{ uri: logo }}

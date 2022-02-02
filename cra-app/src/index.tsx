@@ -3,12 +3,16 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { NativeBaseProvider, extendTheme } from "native-base";
 import reportWebVitals from "./reportWebVitals";
+import { setFonts } from "./test";
 
+console.log(setFonts);
 const theme = extendTheme({
   config: {
     initialColorMode: "dark",
   },
 });
+
+setFonts();
 
 ReactDOM.render(
   <React.StrictMode>

@@ -88,6 +88,7 @@ function ColorModeSwitch() {
         position="absolute"
         top={12}
         right={8}
+        //@ts-ignore
         onPress={toggleColorMode}
         icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
         accessibilityLabel="Color Mode Switch"

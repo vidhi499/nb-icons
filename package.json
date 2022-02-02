@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/vidhi499/nb-icons/issues"
   },
-  "homepage": "https://github.com/vidhi499/nb-icons#readme"
+  "homepage": "https://github.com/vidhi499/nb-icons#readme",
+  "dependencies": {
+    "@expo/vector-icons": "^12.0.5"
+  }
 }
